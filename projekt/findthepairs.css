@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Upheal, serif;
+    font-size: 20px;
+}
+#name, #select, #submit{
+    font-family: Upheal, serif;
+    font-size:16px;
+}
+
+@font-face {
+    font-family: 'Upheal';
+    src: url('upheavtt.ttf');
+}
+body {
+    background-image: url("images/ib.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game {
+    width: 50%;
+    height: 85%;
+    border: 5px solid white;
+    position: fixed;
+    left: 25%;
+    background: #e9dadf;
+    opacity: 90%;
+}
+@media screen and (max-width: 1350px) {
+    #game {
+        width: 800px;
+        height: 600px;
+    }
+}
+#cardPanel{
+    grid-gap: 1px;
+    max-width: 500px;
+    margin: 5px;
+    padding: 30px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#rightPanel{
+    float:right;
+    width: 35%;
+    height: 100%;
+    border:2px gray groove;
+}
+#submit{
+    position:absolute;
+    bottom: 1px;
+    width: 35%;
+    height:25px;
+    left:64.7%;
+    background-color: black;
+    border: none;
+    color: #e9dadf;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: gray;
+}
+
+
+.card, .cardHidden{
+    height: 100px;
+    width: 100px;
+}
+.cardHidden{
+    height: 104px;
+    width: 104px;
+}
+.card{
+    border:2px ridge black;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.card>img{
+    display: none;
+    cursor: default;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+caption{
+    border: 2px solid black;
+    background-color: black;
+    color: #e9dadf;
+}
+body>#title{
+    text-align: center;
+}
+#title{
+    color:#e9dadf;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the pair</title>
+    <link rel="stylesheet" href="findthepairs.css">
+    <script src= "http://code.jquery.com/jquery-latest.js"></script>
+    <script src = "findthepair.js"></script>
+</head>
+<body>
+<p id = "title">Binding of Isaac: Find the Pair</p>
+<div id = "game">
+    <div id = "rightPanel">
+        <p id = "timer">Timer: 0</p>
+        <p id = "flips">Flips: 0</p>
+        <label for="select"> Pairs:</label>
+        <select name="select" size=”1” id="select">
+            <option disabled>Choose size</option>
+            <option value="6">6 pairs</option>
+            <option value="8">8 pairs</option>
+            <option value="10">10 pairs</option>
+        </select>
+        <br><br>
+        <label for="name">Name: </label> <input id = "name" type="text" placeholder="Your name goes here">
+        <input type="submit" id = "submit" value="Submit">
+        <br><br>
+        <table id = "leaderb">
+            <caption>Leaderboard</caption>
+            <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id = "cardPanel">
+    </div>
+</div>
+</body>
+</html>
